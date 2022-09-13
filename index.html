@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+<link rel="icon" href="666.png">
+    <title>Log in or Sign up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline id="back">
+        <source src="video11.mp4" type="video/mp4">
+    </video>
+    <div class="form">
+        <center><h1>Login Here</h1>
+        <input type="text" name="" placeholder="Enter your username" id="uname">
+        <br>
+        <br>
+        <input type="password" name="" placeholder="Enter your password" id="password">
+        <br>
+        <br>
+        <button class="btn" onclick="login()"><a href="#">Login</a></button>
+        <p class="link">Don't have an account?<br>
+        <a href="#">Sign up</a></p>
+        <p class="fp">Forgot Password?</p>
+    </center>
+    </div>
+    <script>
+        function login(){
+            var uname=document.getElementById('uname').value;
+            var password=document.getElementById('password').value;
+            if(uname=="Lynx" && password=="852456"){
+                location.assign("http://127.0.0.1:5501/Login_page_javascript/welcome.html")
+            }
+            else{
+                window.alert("Login Failed!😒")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
